@@ -20,6 +20,7 @@ Vagrant.configure("2") do |config|
       config.vm.box = "cobra-cli/Rocky9GUI"
       config.ssh.insert_key = false
       rocky.vm.provider :virtualbox do |v|
+        v.customize ["modifyvm", :id, "--audio", "none"]
         v.customize ["modifyvm", :id, "--memory", 16392]
         v.customize ["modifyvm", :id, "--cpus", 8]
         v.customize ["modifyvm", :id, "--vram", 128]
