@@ -1,0 +1,1 @@
+{"dependencies":[["vagrant-disksize",["= 0.1.3"]],["vagrant-guest_ansible",["= 0.0.4"]]],"checksum":"dd02e4e521c450fa736f01729e6422a5ff20d23b28d651fd0dc9252c40e3673c","vagrant_version":"2.3.2"}
