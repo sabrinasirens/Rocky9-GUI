@@ -29,7 +29,7 @@ Vagrant.configure("2") do |config|
       rsync__exclude: ".git/"
     config.vm.provision "ansible_local" do |ansible|
       ansible.playbook = "playbook.yml"
-    
+    end
 
     config.vm.define "rocky2" do |rocky2|
       rocky2.vm.hostname = "RockyBox2"
