@@ -26,3 +26,9 @@
       copy:
         dest: /etc/sudoers.d/rocky
         content: "rocky ALL=(ALL) NOPASSWD: ALL"
+    - name: create hosts file
+      copy:
+        dest: "/etc/hosts"
+        content: |
+          192.168.2.100    rocky1
+          192.168.2.101    rocky2
