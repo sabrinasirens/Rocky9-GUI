@@ -27,8 +27,8 @@ Vagrant.configure("2") do |config|
       end
     config.vm.synced_folder ".", "/vagrant", type: "rsync",
       rsync__exclude: ".git/"
-    config.vm.provision "ansible_local" do |ansible|
-      ansible.playbook = "playbook.yml"
+#    config.vm.provision "ansible_local" do |ansible|
+#      ansible.playbook = "playbook.yml"
     end
 
     config.vm.define "rocky2" do |rocky2|
@@ -47,7 +47,6 @@ Vagrant.configure("2") do |config|
       rsync__exclude: ".git/"
     config.vm.provision "ansible_local" do |ansible|
       ansible.playbook = "playbook2.yml"
-    end
     end
   end
 end
